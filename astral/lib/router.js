@@ -20,6 +20,9 @@ Router.route('/posts/:_id/edit', {
 // route for new post
 Router.route('/submit', {name: 'postSubmit'});
 
+// route for soul status
+Router.route('/soul-status', {name: 'soulStatus'});
+
 var requireLogin = function() {
   if (! Meteor.user()) {
     if (Meteor.loggingIn()) {

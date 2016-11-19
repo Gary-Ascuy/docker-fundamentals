@@ -192,3 +192,14 @@ body {
     width: 30%;
     transition: width 1s;
 }
+
+.main-soul-state tr.head, .food {
+    color: black !important;
+    font-weight: bold;
+    border: 3px dashed black;
+}
+
+.main-soul-state td {
+    padding: 10px;
+    width: 33% !important;
+}
