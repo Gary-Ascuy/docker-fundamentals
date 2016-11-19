@@ -7,7 +7,10 @@
     <center>GRAPHICS</center>
   </h1>
 
-  <center><div id="soulchart" width="400" height="400" style="width: 100%;"></div></center>
+  <center class="loading">
+    <img id="loading-icon" src="/loading.gif">
+    <div id="soulchart" width="400" height="400" style="width: 100%; display: none;"></div>
+  </center>
 
   <div>
     <table class="main-soul-state" style="font-size: 25pt" width="100%" cellpadding="10" cellspacing="10">
@@ -25,6 +28,11 @@
         <td align="left">{{status}}</td>
         <td align="center">{{status}}</td>
         <td align="right">{{status}}</td>
+      </tr>
+      <tr>
+        <td align="left">{{universe}}</td>
+        <td align="center">{{universe}}</td>
+        <td align="right">{{universe}}</td>
       </tr>
       <tr>
         <td align="left">{{universe}}</td>

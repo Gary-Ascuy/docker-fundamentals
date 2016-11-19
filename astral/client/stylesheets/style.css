@@ -204,19 +204,75 @@ body {
     width: 33% !important;
 }
 
-
-.ct-line.ct-threshold-above, .ct-point.ct-threshold-above, .ct-bar.ct-threshold-above {
-  stroke: #f05b4f;
+@keyframes dashoffseta {
+  from {
+    stroke-dashoffset: 10;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
-.ct-line.ct-threshold-below, .ct-point.ct-threshold-below, .ct-bar.ct-threshold-below {
-  stroke: #59922b;
+@keyframes dashoffsetb {
+  from {
+    stroke-dashoffset: 30;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
-.ct-area.ct-threshold-above {
-  fill: #f05b4f;
+@keyframes dashoffsetc {
+  from {
+    stroke-dashoffset: 50;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
-.ct-area.ct-threshold-below {
-  fill: #59922b;
+.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut {
+    stroke: #ff6485;
+    stroke-width: 6px;
+    stroke-dasharray: 5px;
+    stroke-dashoffset: 100;
+    -webkit-animation: dashoffseta 1s linear infinite;
+    -moz-animation: dashoffseta 1s linear infinite;
+    -o-animation: dashoffseta 1s linear infinite;
+    animation: dashoffseta 1s linear infinite;
 }
+.ct-series-a .ct-slice-pie, .ct-series-a .ct-area {
+    fill: #ffe0e6;
+    fill-opacity: 0.5;
+}
+
+.ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut {
+    stroke: #82c5f3;
+    stroke-width: 2px;
+    stroke-dasharray: 5px;
+    stroke-dashoffset: 100;
+    -webkit-animation: dashoffsetb 1s linear infinite;
+    -moz-animation: dashoffsetb 1s linear infinite;
+    -o-animation: dashoffsetb 1s linear infinite;
+    animation: dashoffsetb 1s linear infinite;
+}
+.ct-series-b .ct-slice-pie, .ct-series-b .ct-area {
+    fill: #d7ecfb;
+    fill-opacity: 0.5;
+}
+
+.ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut {
+    stroke: #ff9f41;
+    stroke-width: 4px;
+    stroke-dasharray: 5px;
+    stroke-dashoffset: 100;
+    -webkit-animation: dashoffsetc 1s linear infinite;
+    -moz-animation: dashoffsetc 1s linear infinite;
+    -o-animation: dashoffsetc 1s linear infinite;
+    animation: dashoffsetc 1s linear infinite;
+}
+.ct-series-c .ct-slice-pie, .ct-series-c .ct-area {
+    fill: #ffecd9;
+    fill-opacity: 0.5;
+}
+
