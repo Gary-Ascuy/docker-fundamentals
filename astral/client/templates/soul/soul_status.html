@@ -1,5 +1,5 @@
 <template name="soulStatus">
-  <h1 style="background: #ccc;">
+  <h1 class="food">
     <center>Current Soul Status</center>
   </h1>
 
@@ -13,12 +13,16 @@
   </center>
 
   <div>
-    <table class="main-soul-state" style="font-size: 25pt" width="100%" cellpadding="10" cellspacing="10">
-      <tr class="head" style="background: #ccc;">
+    <div class="food">
+    <table class="main-soul-state" style="font-size: 20pt" width="100%" cellpadding="10" cellspacing="10">
+      <tr>
         <td align="left">SOUL</td>
         <td align="center">STATUS</td>
         <td align="right">UNIVERSE</td>
       </tr>
+    </table>
+    </div>>
+    <table class="main-soul-state" style="font-size: 25pt" width="100%" cellpadding="10" cellspacing="10">
       <tr>
         <td align="left">{{soul}}</td>
         <td align="center">{{soul}}</td>
@@ -44,7 +48,7 @@
 
 
   <h1 class="food" style="background: #ccc; color: #ccc;">
-    <center>.</center>
+    <center>&nbsp;</center>
   </h1>
   <br/><br/><br/>
 </template>

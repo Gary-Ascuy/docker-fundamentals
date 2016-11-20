@@ -1,6 +1,7 @@
 .grid-block, .main, .post, .comments li, .comment-form {
-    background: #000;
-    border-radius: 3px;
+    background: rgba(66, 139, 202, 0.42) !important;
+
+    border-radius: 15px 0px 15px 0px;
     padding: 10px;
     margin-bottom: 10px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -9,7 +10,7 @@
 
 body {
     background: url(/images/bg.jpg);
-    color: #666666; }
+    color: #ccc; }
 
 #main {
     position: relative;
@@ -22,16 +23,21 @@ body {
 
 .navbar {
     margin-bottom: 50px;
-    background-color: #ddd;/* added by anoop */
-    color: red;
+    border-radius: 0px 0px 15px 15px;
+    background-color: rgba(66, 139, 202, 0.42) !important;
+    border: 0px;
 }
 /* line 32, ../sass/style.scss */
 .navbar .navbar-inner {
     border-radius: 0px 0px 15px 15px;
 }
 
-.navbar-brand {
-    color: black;/* added by anoop: */
+.navbar-brand, .dropdown-toggle, .dropdown-toggle a:focus, .nav.navbar-nav a {
+    color: #fff !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,.navbar-brand a {
+    color: #fff !important;
+    background-color: rgba(66, 139, 202, 0.42) !important;
 }
 
 #spinner {
@@ -70,14 +76,15 @@ body {
     margin: 0;
     line-height: 1.4;
     font-size: 18px; }
-.post .post-content h3 a {
+.post .post-content h3 a, .post .post-content a {
+    color: coral;
     display: inline-block;
     margin-right: 5px; }
 .post .post-content h3 span {
     font-weight: normal;
     font-size: 14px;
     display: inline-block;
-    color: #aaaaaa; }
+    color: #ffeeee; }
 .post .post-content p {
     margin: 0; }
 .post .discuss {
@@ -178,9 +185,11 @@ body {
 }
 
 .main-soul-state tr.head, .food {
-    color: black !important;
+    color: rgba(249, 249, 249, 0.81) !important;
+    background: rgba(66, 139, 202, 0.42) !important;
     font-weight: bold;
-    border: 3px dashed black;
+    border: 3px solid rgba(53, 114, 179, 0.85);
+    border-radius: 20px;
 }
 
 .main-soul-state td {
@@ -227,7 +236,7 @@ body {
 }
 .ct-series-a .ct-slice-pie, .ct-series-a .ct-area {
     fill: #ffe0e6;
-    fill-opacity: 0.5;
+    fill-opacity: 0.2;
 }
 
 .ct-series-b .ct-point, .ct-series-b .ct-line, .ct-series-b .ct-bar, .ct-series-b .ct-slice-donut {
@@ -242,7 +251,7 @@ body {
 }
 .ct-series-b .ct-slice-pie, .ct-series-b .ct-area {
     fill: #d7ecfb;
-    fill-opacity: 0.5;
+    fill-opacity: 0.2;
 }
 
 .ct-series-c .ct-point, .ct-series-c .ct-line, .ct-series-c .ct-bar, .ct-series-c .ct-slice-donut {
@@ -257,6 +266,6 @@ body {
 }
 .ct-series-c .ct-slice-pie, .ct-series-c .ct-area {
     fill: #ffecd9;
-    fill-opacity: 0.5;
+    fill-opacity: 0.2;
 }
 
